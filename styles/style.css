@@ -52,7 +52,7 @@ nav{
 /* movie section start */
 .movie-section{
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 4fr 2fr;
     gap: 10px;
 }
 
@@ -66,13 +66,9 @@ img{
 .movies-area{
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-rows: 200px;
     grid-auto-flow: dense;
-}
-
-.movie-search-area{
-    background-color: #898AA6;
 }
 
 .movies-area .wide{
@@ -107,3 +103,41 @@ img{
     cursor: pointer;
 }
 /* movie section end */
+
+/* movie-search-area start*/
+
+.movie-search-area{
+    background-color: #898AA6;
+}
+
+
+.movie-search-area form{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.movie-search-area form input{
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: inherit;
+    background-color: #fff;
+}
+.movie-search-area form button{
+    padding: 0.75rem 1rem;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: inherit;
+    background-color: #FD799B;
+    color: #fff;
+}
+
+.movie-search-area form button:hover{
+    cursor: pointer;
+}
+/* movie-search-area end*/
